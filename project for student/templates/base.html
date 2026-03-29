@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Reservation System</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f9f9f9, #e3f2fd);
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Header */
+        h1 {
+            text-align: center;
+            color: #1976d2;
+            margin-bottom: 30px;
+        }
+
+        /* Section headings */
+        h2 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+
+        /* Links */
+        a {
+            text-decoration: none;
+            color: #1976d2;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0d47a1;
+        }
+
+        /* Buttons */
+        button, .btn {
+            background: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        button:hover, .btn:hover {
+            background: #0d47a1;
+        }
+
+        /* Forms */
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        input[type="text"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #1976d2;
+            outline: none;
+        }
+
+        /* Booking list */
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .booking-info {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .update-link {
+            background: #ff9800;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .update-link:hover {
+            background: #e65100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bus Reservation System</h1>
+    {% block content %}{% endblock %}
+</body>
+</html>
